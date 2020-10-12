@@ -2,9 +2,9 @@ import items from "./gallery-items.js";
 
 const gallery = document.querySelector(".js-gallery");
 
-gallery.insertAdjacentHTML("afterbegin", photoGallery());
+gallery.insertAdjacentHTML("afterbegin", htmlGallery());
 
-function photoGallery() {
+function htmlGallery() {
   return items
     .map(
       ({ preview, original, description }) =>
